@@ -1,96 +1,119 @@
-html,
 body {
-    padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    text-align: center;
     padding: 0;
-    background: #d6433b;
-    color: #fff;
-    font-family: Open Sans;
+    background-color: maroon;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#logo {
+    display: block;
+    margin: 50px auto 20px;
+    width: 150px;
 }
 
 h1 {
-    font-size: 50px;
-    font-weight: 100;
     text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
 
-body {
-    font-family: Open Sans;
-    font-weight: 100;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
+.button-container {
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
 }
 
-article {
-    display: block;
-    width: 700px;
-    padding: 50px;
-    margin: 0 auto;
+.button {
+    background-color: white;
+    color: maroon;
+    border: none;
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    border-radius: 0;
+    text-align: center;
+}
+
+.button:not(:last-child) {
+    margin-right: 0.2em;
+    /* reduce gap between buttons */
+    border-right: none;
+    /* remove right border on buttons */
+}
+
+.button:hover {
+    background-color: lightcoral;
+}
+
+footer {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
 }
 
 a {
-    color: #fff;
-    font-weight: bold;
-}
-
-a:hover {
     text-decoration: none;
+    color: inherit;
 }
 
-svg {
-    width: 75px;
-    margin-top: 1em;
+p+p {
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding-top: 50px;
 }
 
-/* CSS */
-.button-1 {
-  background-color: #ffecf3;
-  border-radius: 8px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #020000;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 20px;
-  list-style: none;
-  margin: 0;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: color 100ms;
-  vertical-align: baseline;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+/* Default styles */
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 
-.button-1:hover,
-.button-1:focus {
-  background-color: rgb(255, 163, 163);
+/* Media queries for smaller devices */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        margin: 0;
+        border-radius: 0;
+        padding: 12px 0;
+        width: 100%;
+        background-color: white;
+        color: maroon;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .button:not(:last-child) {
+        margin-right: 0;
+        border-right: none;
+        border-bottom: 1px solid white; /* add border between buttons */
+    }
+
+    .button:first-child {
+        margin-top: 10px;
+    }
+
+    footer {
+        height: auto;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
 }
