@@ -23,29 +23,6 @@ h1 {
     justify-content: center;
 }
 
-.button {
-    background-color: white;
-    color: maroon;
-    border: none;
-    padding: 10px 20px;
-    margin: 0;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    flex: 1;
-    border-radius: 0;
-    text-align: center;
-}
-
-.button:not(:last-child) {
-    margin-right: 0.2em;
-    /* reduce gap between buttons */
-    border-right: none;
-    /* remove right border on buttons */
-}
-
 .button:hover {
     background-color: lightcoral;
 }
@@ -74,46 +51,33 @@ p+p {
     padding-top: 50px;
 }
 
-/* Default styles */
+
 .button-container {
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Media queries for smaller devices */
-@media (max-width: 768px) {
-    .button-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.button {
+    margin: 0;
+    border-radius: 0;
+    padding: 12px 0;
+    width: 100%;
+    background-color: white;
+    color: maroon;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+}
 
-    .button {
-        margin: 0;
-        border-radius: 0;
-        padding: 12px 0;
-        width: 100%;
-        background-color: white;
-        color: maroon;
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        cursor: pointer;
-        text-align: center;
-    }
+.button:not(:last-child) {
+    margin-right: 0;
+    border-right: none;
+    border-bottom: 1px solid white;
+    /* add border between buttons */
+}
 
-    .button:not(:last-child) {
-        margin-right: 0;
-        border-right: none;
-        border-bottom: 1px solid white; /* add border between buttons */
-    }
-
-    .button:first-child {
-        margin-top: 10px;
-    }
-
-    footer {
-        height: auto;
-        line-height: 1.5;
-        margin-bottom: 20px;
-    }
+.button:first-child {
+    margin-top: 10px;
 }
