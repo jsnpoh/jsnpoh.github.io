@@ -42,27 +42,44 @@ p+p {
 .button {
     width: 50%;
     background-color: white;
-    color: maroon;
+    color: rgb(255, 255, 255);
     font-size: 35px;
     font-weight: bold;
     text-align: center;
-    
+
     cursor: pointer;
     display: flex;
     justify-content: center;
     padding-top: 15%;
     padding-bottom: 15%;
     line-height: 0;
-  }
-  
-  
-  .button:not(:last-child) {
+}
+
+
+.button:not(:last-child) {
     border-right: 1px solid white;
     margin-right: -1px;
-  }
-  
-  .button-container {
+}
+
+.button-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
+}
+
+
+.clkBtn-1 {
+    background-color: #70ff5d;
+}
+
+.clkBtn-2 {
+    background-color: #ff944d;
+}
+
+.clkBtn-3 {
+    background-color: #f854dd;
+}
+
+.clkBtn-4 {
+    background-color: #ff5b5b;
+}
