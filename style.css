@@ -1,85 +1,19 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: maroon;
-    color: white;
-    font-family: Arial, sans-serif;
+  }
+  
+.second-col{
+    width: 100%;
+    height: 500px;
+    padding-top: 1%;
+    background-color: rgb(233, 236, 236);
 }
 
-h1 {
-    text-align: center;
-    font-size: 80px;
-    margin-bottom: 30px;
+#companyName{
+    font-family: 'Lilita One', cursive;
 }
 
-.button:hover {
-    background-color: rgb(0, 0, 0);
-}
-
-footer {
-    background-color: maroon;
-    color: white;
-    text-align: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    line-height: 70px;
-    margin-bottom: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-p+p {
-    margin-top: 20px;
-    border-top: 1px solid white;
-    padding-top: 50px;
-}
-
-.button {
-    width: 50%;
-    background-color: white;
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    line-height: 0;
-}
-
-
-.button:not(:last-child) {
-    border-right: 1px solid white;
-    margin-right: -1px;
-}
-
-.button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-.clkBtn-1 {
-    background-color: #70ff5d;
-}
-
-.clkBtn-2 {
-    background-color: #ff944d;
-}
-
-.clkBtn-3 {
-    background-color: #f854dd;
-}
-
-.clkBtn-4 {
-    background-color: #ff5b5b;
+#cool{
+    background-color: aliceblue;
 }
