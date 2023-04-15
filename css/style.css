@@ -21,6 +21,10 @@ body{
     background-color: black;
 }
 
-.slidingThing{
-    padding-top: 60px;
+.cAlign{
+    text-align: center;
+}
+
+.XD{
+    margin-bottom: 50px;
 }
