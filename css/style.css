@@ -18,7 +18,7 @@ body {
     background-color: aliceblue;
 }
 body{
-    background-color: black;
+    background-color: rgb(15, 14, 14);
 }
 
 .cAlign{
@@ -27,4 +27,30 @@ body{
 
 .XD{
     margin-bottom: 50px;
+}
+
+/* Text Hover */
+.txt:hover {
+    border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+/* Navigation Part */
+
+.navClass{
+    color: rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    background-color: aqua;
+    display: flex;
+}
+
+.navBox{
+    /* TRBL or Vert & Sides */
+    padding: 5% 50px;
+    background-color: rgb(255, 255, 255);
+}
+.navBox:hover{
+    background-color: rgb(140, 140, 141);
+    transition-delay: 100ms;
+    cursor:pointer;
 }
