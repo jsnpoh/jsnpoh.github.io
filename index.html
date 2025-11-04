@@ -14,28 +14,105 @@
 
     <title>Home</title>
 
+    <style>
+        /* Basic Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f5f5f5;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+            background: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        #banner {
+            margin-top: 5rem;
+            font-size: 4rem;
+            font-weight: bold;
+            animation: bounce 2s infinite;
+            color: #333;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding: 1rem;
+            background: #333;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-
-    <h1>Extemix</h1>
-    <div id="banner"></div> <!-- Changed class to id -->
-
-    <footer>
-        <p>Copyright 2022-2024</p>
-    </footer>
+    <div id="root"></div>
 
     <script type="text/babel">
+        // Navbar Component
+        const Navbar = () => {
+            return (
+                <nav>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#portfolio">Portfolio</a>
+                </nav>
+            );
+        };
+
+        // Banner Component
         const Banner = () => {
             return (
-                <div>
-                    <p>Hey</p>
+                <div id="banner">
+                    Extemix
                 </div>
             );
-        }
+        };
 
-        // Render the component to the DOM
-        ReactDOM.render(<Banner />, document.getElementById('banner'));
+        // Footer Component
+        const Footer = () => {
+            return (
+                <footer>
+                    <p>Copyright 2022-2024</p>
+                </footer>
+            );
+        };
+
+        // Main App
+        const App = () => {
+            return (
+                <div>
+                    <Navbar />
+                    <Banner />
+                    <Footer />
+                </div>
+            );
+        };
+
+        // Render to the DOM
+        ReactDOM.render(<App />, document.getElementById('root'));
     </script>
 </body>
 
