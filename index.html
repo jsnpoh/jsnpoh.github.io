@@ -4,116 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extemix</title>
 
-    <!-- DEVELOPMENT -->
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- React and Babel CDN -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <!-- BABEL -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-    <title>Home</title>
-
-    <style>
-        /* Basic Reset */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #f5f5f5;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            padding: 1rem;
-            background: #333;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #f39c12;
-        }
-
-        #banner {
-            margin-top: 5rem;
-            font-size: 4rem;
-            font-weight: bold;
-            animation: bounce 2s infinite;
-            color: #333;
-        }
-
-        @keyframes bounce {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        footer {
-            margin-top: 5rem;
-            padding: 1rem;
-            background: #333;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
     <div id="root"></div>
 
-    <script type="text/babel">
-        // Navbar Component
-        const Navbar = () => {
-            return (
-                <nav>
-                    <a href="#contact">Contact Us</a>
-                    <a href="#portfolio">Portfolio</a>
-                </nav>
-            );
-        };
-
-        // Banner Component
-        const Banner = () => {
-            return (
-                <div id="banner">
-                    Extemix
-                </div>
-            );
-        };
-
-        // Footer Component
-        const Footer = () => {
-            return (
-                <footer>
-                    <p>Copyright 2022-2024</p>
-                </footer>
-            );
-        };
-
-        // Main App
-        const App = () => {
-            return (
-                <div>
-                    <Navbar />
-                    <Banner />
-                    <Footer />
-                </div>
-            );
-        };
-
-        // Render to the DOM
-        ReactDOM.render(<App />, document.getElementById('root'));
-    </script>
+    <!-- Link to JS -->
+    <script type="text/babel" src="app.js"></script>
 </body>
 
 </html>
