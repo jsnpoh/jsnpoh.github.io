@@ -1,1 +1,1 @@
-https://www.jsnpoh.github.io/
+https://jsnpoh.github.io/
